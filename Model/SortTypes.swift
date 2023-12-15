@@ -1,10 +1,4 @@
-//
-//  SortTypes.swift
-//  To-Do
-//
-//  Created by Aman Personal on 02/10/20.
-//  Copyright © 2020 Aaryan Kothari. All rights reserved.
-//
+
 
 import Foundation
 
