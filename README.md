@@ -16,3 +16,23 @@ NotesHub дозволяє користувачам миттєво створюв
 
 5. Проста Історія
 NotesHub автоматично зберігає історію змін нотаток, дозволяючи переглядати попередні версії та відновлювати попередні дані.
+
+
+Використані джерела
+
+https://chat.openai.com
+https://www.google.com/
+https://www.youtube.com/watch?v=t_mypMqSXNw&ab_channel=iOSAcademy
+stackoverflow.com/
+
+
+
+
+<img width="371" alt="Снимок экрана 2023-12-14 в 20 32 36" src="https://github.com/gazon14/Projet-Lab2/assets/146487719/fdf5d59a-35ec-4a97-835a-ba6bba095d98">
+<img width="377" alt="Снимок экрана 2023-12-14 в 20 33 02" src="https://github.com/gazon14/Projet-Lab2/assets/146487719/f9b9d63b-9104-4cf1-849c-60a373e05885">
+
+
+
+
+
+
