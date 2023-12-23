@@ -192,4 +192,56 @@ extension TaskDetailsViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         debugPrint("Click: \(indexPath.row) \(imagesAttached[indexPath.row])")
     }
+    
+    
+    var taskNotes: Set<Note> = []
+
+        // Function to load notes for the selected task
+        func loadNotes(for task: Task) {
+            taskNotes = task.notes
+            // Update your UI to display the notes as needed
+        }
+
+        // Function to save notes
+        func saveNotes() {
+            // Save the notes to the CoreData store
+            // You can iterate through taskNotes and create/update Note entities
+            
+        }
+    
+
+        @IBOutlet weak var notesTextView: UITextView!
+
+        var task: Task?
+
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            configureUI()
+        }
+
+        func configureUI() {
+            // Fetch and display notes
+            fetchAndDisplayNotes()
+
+            // Add any additional UI configuration logic here
+        }
+
+        func fetchAndDisplayNotes() {
+            // Check if the task exists
+            guard let task = task else {
+                return
+            }
+
+            // Assuming you have a method to fetch notes associated with the task
+            let notes = task.notes?.allObjects as? [Note] ?? []
+            let notesText = notes.map { $0.content ?? "" }.joined(separator: "\n")
+
+            // Display notes in the UITextView
+            notesTextView.text = notesText
+        }
+
+     
+
+    
+
 }
